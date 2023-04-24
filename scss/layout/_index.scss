@@ -1,0 +1,141 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*CAJA1 */
+.hero{
+    background:url('../multimedia/img/seguridadinfor.gif');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.hero-caja1-desarrollo{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.hero-caja1 img{
+    background-color: white;
+    padding: 10px;
+}
+.hero-caja1{
+    color:white;
+    font-family: 'Bruno Ace SC';
+    transition: all .2s;
+}
+.hero-caja1:hover{
+    transform: scale(1.1);
+}
+/*CAJA 2*/
+.caja2{
+    background-color:#e8ea96;
+    padding: 20px;
+}
+.caja2 h2{
+    padding: 10px;
+}
+.caja2 .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.caja2-contenedor .caja2-contenedor-img{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.caja2-contenedor-img{
+    text-align: center;
+}
+.caja2-contenedor-img:hover{
+    transform: scale(1.1);
+}
+.caja2-contenedor-img p{
+    padding: 10px;
+    font-family: 'Bruno Ace SC';
+    font-size: 30px;
+    font-weight: bold;
+}
+.caja2-contenedor-img img{
+    width: 200px;
+    height: 200px;
+}
+/*CAJA 3*/
+.caja3{
+    padding: 40px 40px 60px 40px;
+    background: linear-gradient(130deg,rgb(230, 164, 117),rgb(232, 234, 150));
+}
+.caja3 h3{
+    font-family:'Bruno Ace SC' ;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.caja3 .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .2s ease-in;
+}
+.caja3 .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+.caja3 img{
+    font-size: 2.5rem;;
+    height: 150px;
+    width: 200px;
+    margin: 10px 10px 20px 10px;
+    object-fit: cover;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+/*CAJA 4*/
+.contacto1 {
+    background:linear-gradient(130deg,rgb(209, 142, 107),rgb(53, 121, 222));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contacto1 h2{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.contacto1-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 50px;
+}
+.item{
+    background-color: rgb(157, 237, 172);
+    padding: 10px;
+    margin: 10px;
+    font-family:'Bruno Ace SC';
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    transition: all .2s;
+}
+.item:hover{
+    background-color: rgb(21, 90, 34);
+    color: rgba(255, 255, 255, 0.822);
+    transform: scale(1.1);
+}

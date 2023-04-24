@@ -1,0 +1,61 @@
+/*ETIQUETAS DEL NAV*/
+.navbar{
+    padding: 2rem;
+    background:linear-gradient(130deg,rgb(53, 79, 210),rgb(60, 117, 201),rgba(72, 92, 164, 0.925));
+    &-collapse{
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Bruno Ace SC';
+        font-weight: bold;
+    }
+    &-brand{
+        padding: 10px;
+        transition: all .2s;
+        color: rgba(255, 255, 255, 0.919);
+        &:hover{
+            border: rgb(238, 238, 238) solid;
+            border-radius: 30px;
+            background-color: rgba(184, 234, 146, 0.917);
+        }
+    }
+    img{
+        width: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+    &-nav{
+        gap: 20px;
+        .nav{
+            &-item{
+                transition: all .3s;
+                font-size: 30px;
+                .nav-link{
+                    color: rgb(238, 238, 238);
+                    &:hover{
+                        color: rgb(49, 45, 45);
+                    }
+                }
+                &:hover{
+                    border: rgb(238, 238, 238) solid;
+                    border-radius: 10px;
+                    background-color: rgba(184, 234, 146, 0.917);
+                }
+            }
+        }
+        .btn1{
+            padding: 9px 25px;
+            display: inline-block;
+            font-weight: 500;
+            margin-right: 30px;
+            font-size: 20px;
+            background-color:rgb(191, 210, 82);
+            color: #eee;
+            border: none;
+            border-radius: 50px;
+            transition: all .3s;
+            &:hover{
+                background-color: rgb(202, 102, 26);
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+/*INICIO DE SECCION PLANES*/
+.planes{
+    background:linear-gradient(135deg,rgb(188, 227, 116),rgb(186, 132, 46));
+    padding: 50px;
+    .pretab{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        & h1{
+            padding-top: 10px;
+        }
+        .carrito{
+            padding: 20px;
+            background-color: rgb(185, 172, 55);
+            border-radius: 20px;
+            color: rgb(238, 238, 238);
+            font-family:'Roboto';
+            font-weight: 10px;
+            border: none;
+            transition: all .3s;
+            &:hover{
+                background-color: rgb(58, 198, 196);
+                transform: scale(1.1);
+                color: rgb(25, 25, 25);
+            }
+        }
+    }
+    .planes-tabla{
+        border:none;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+    }
+    .planes-tabla{
+        border:none;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        &:hover{
+            background:linear-gradient(130deg,rgb(18, 92, 171),rgba(21, 21, 216, 0.86));
+            color: rgb(205, 207, 219);
+            transition: .5s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        & img{
+            padding: 10px;
+        }
+        & h3{
+            font-size: 25px;
+            padding: 5px;
+        }
+        & p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .botonplan{
+            padding: 9px 25px;
+            margin-top: 20px;
+            border-radius: 20px;
+            border: none;
+            font-family: 'Roboto';
+            background-color: rgb(232, 234, 150);
+            transition: .3s;
+            &:hover{
+                background-color: rgb(226, 144, 85);
+            }
+        }
+    }
+    //CONTACTO 
+    .contacto1 {
+        background:linear-gradient(130deg,rgb(209, 142, 107),rgb(53, 121, 222));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        & h2{
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+        &-items{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            gap: 50px;
+        }
+        .item{
+            background-color: rgb(157, 237, 172);
+            padding: 10px;
+            margin: 10px;
+            font-family:'Bruno Ace SC';
+            font-weight: bold;
+            border-radius: 20px;
+            text-align: center;
+            transition: all .2s;
+            &:hover{
+                background-color: rgb(21, 90, 34);
+                color: rgba(255, 255, 255, 0.822);
+                transform: scale(1.1);
+            }
+        }
+    }
+    //SOCIOS
+    .socio1{
+        background-image: url('../multimedia/img/portasocio.jpg');
+        display: flex;
+        padding: 30px;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        & h2{
+            color: rgb(61, 55, 55);
+            text-align: center;
+        }
+        .boton4{
+            display: flex;
+            button{
+                justify-content: baseline;
+                font-size: 15px;
+                border-radius: 20px;
+                padding: 20px;
+                border: rgb(17, 78, 171) solid 1px;
+                transition: .1s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: rgb(238, 238, 238);
+                    background-color: rgb(76, 133, 19);
+                }
+            }
+        }
+    }
+}
