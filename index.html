@@ -5,92 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON PRINCIPAL PAGINA WEB-->
+    <link rel="icon" href="multimedia/img/icono-login.png" type="image/x-icon">
+    <!--BOOTSTRAT-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>Inicio</title>
 </head>
 
 <body>
-    <header>
-        <!-- NAV ETIQUETA DE NAVEGADOR  -->
-        <nav class="nav">
-            <div class="nav-brand">
-                <a href="index.html">
-                    <img src="multimedia/img/portada.jpeg" alt="">
+    <!-- NAV ETIQUETA DE NAVEGADOR  -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="multimedia/img/portada.jpeg" alt="logo de la pagina web">
                     CODEBREAK
                 </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/planes.html">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="pages/about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/videos.html">Videos</a>
+                    </li>
+                    <button type="submit">MI CUENTA</button>
+                </ul>
             </div>
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="pages/about.html" class="nav-link">Nosotros</a></li>
-                <li><a href="pages/planes.html" class="nav-link">Planes</a></li>
-                <li><a href="pages/contactos.html" class="nav-link">Contacto</a></li>
-                <li><a href="pages/videos.html" class="nav-link">Videos</a></li>
-                <button class="btn1">Mi cuenta</button>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!--MAIN-->
     <main>
-        
-        <div class="caja1">
-            <div class="caja1-text">
-                <h2>NOSOTROS CUIDAMOS TU CASA Y EMPRESA, VEN YA!!</h2>
+
+        <section class="hero align-items-lg-stretch">
+            <div class="hero-caja1 d-flex flex-column justify-content-center align-items-center">
+                <img class="hero-caja1-desarrollo rounded-circle" src="multimedia/img/foto-caja1.svg" alt="">
+                <h1>NOSOTROS CUIDAMOS TU CASA Y EMPRESA, VEN YA !!</h1>
             </div>
-        </div>
-        <section class="caja2">
+        </section>
+
+        <section class="caja2 seccion2">
             <h2>SERVICIOS QUE OFRECEMOS</h2>
-            <section class="servicios">
-                <div>
+            <div class="caja2 row">
+                <div class="caja2-contenedor-img col-12 col-md-4">
                     <img src="multimedia/img/security.png" alt="">
+                    <p>PROTECCION DE ARCHIVOS</p>
                 </div>
-                <div>
+                <div class="caja2-contenedor-img col-12 col-md-4">
                     <img src="multimedia/img/cloud.png" alt="">
+                    <p>SEGURIDAD DE LA NUBE</p>
                 </div>
-                <div>
+                <div class="caja2-contenedor-img col-12 col-md-4">
                     <img src="multimedia/img/help-tecnique.png" alt="">
+                    <p>SERVICIO TECNICO</p>
                 </div>
-            </section>
-            <div class="service-title">
-                <p>PROTECCION DE ARCHIVOS</p>
-                <p>SEGURIDAD EN LA NUBE</p>
-                <p>SERVICIO TECNICO</p>
             </div>
         </section>
 
         <section class="caja3">
             <h3>TESTIMONIOS</h3>
-            <div class="caja3-container">
-                <div class="test1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis nihil voluptas nam, enim
-                    placeat earum quaerat quo nulla labore.
-                    <p>Carlos ALberto, Ingenierio Informatico</p>
-                    <img src="multimedia/img/p2.jpg" alt="">
+            <div class="caja3-container text-center">
+                <div class="row">
+                    <div class="columna col-12 col-md-4">
+                        <img src="multimedia/img/p2.jpg" alt="">
+                        <p class="test1">Juan Carlos</p>
+                        <h4>Ingeniero en Software</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque aliquid odio aliquam
+                            explicabo facilis pariatur voluptatem saepe. Esse, doloribus.</p>
+                    </div>
+                    <div class="columna col-12 col-md-4">
+                        <img src="multimedia/img/p3.jpg" alt="">
+                        <p class="test2">Daniel Towsend</p>
+                        <h4>Ingeniero en Sistemas</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque aliquid odio aliquam
+                            explicabo facilis pariatur voluptatem saepe. Esse, doloribus.</p>
+                    </div>
+                    <div class="columna col-12 col-md-4">
+                        <img src="multimedia/img/p5.jpg" alt="">
+                        <p class="test3">Carlas Rodriguez</p>
+                        <h4>Ingeniera en Redes</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque aliquid odio aliquam
+                            explicabo facilis pariatur voluptatem saepe. Esse, doloribus.</p>
+                    </div>
                 </div>
-                <div class="test2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis nihil voluptas nam, enim
-                    placeat earum quaerat quo nulla labore.
-                    <p>Veronica Rodriguez, Analista Ciberseguridad</p>
-                    <img src="multimedia/img/p5.jpg" alt="">
-                </div>
-                <div class="test3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis nihil voluptas nam, enim
-                    placeat earum quaerat quo nulla labore.
-                    <p>Valeria Villareal,IBM Engineer</p>
-                    <img src="multimedia/img/p3.jpg" alt="">
-                </div>
-            </div>
         </section>
 
         <!--CONTACTO-->
-        <section class="contacto">
+        <section class="contacto1">
             <h2>PARA MAYOR INFORMACION CONTACTENOS !! </h2>
-            <div class="atencion-cliente">
-                <div class="atencion-1">
+            <div class="contacto1-items">
+                <div class="item">
                     <p>ATENCION AL CLIENTE <img src="multimedia/img/apoyo-tecnico.png" alt=""></p>
                     <p><a href="#" value="telefono"><img src="../multimedia/img/telecommunication.png" alt="phone"> 01-56974563 / +51 936243245</a></p>
                 </div>
-                <div class="numero-1">
+                <div class="item">
                     <p>NUMERO DE TELEFONO <img src="multimedia/img/telephone.png" alt=""></p>
                     <label for="number">Ingresa tu numero</label>
                     <input type="number" name="" id="">
@@ -118,6 +142,10 @@
             <p>@2023 CODEBREAK. Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
