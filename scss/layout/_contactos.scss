@@ -1,11 +1,9 @@
 .image1{
+    @include d1-flex(row,space-evenly,center,0);
     background-image: url('../multimedia/img/CANDADO.jpg');
     background-size: cover;
     width: 100%;
-    display: flex;
     padding: 50px;
-    align-items: center;
-    justify-content: space-evenly;
     .image-1{
         background:linear-gradient(40deg,rgb(27, 30, 212),rgb(38, 171, 216));
         padding: 20px;
@@ -35,10 +33,7 @@
     padding: 20px;
     background: linear-gradient(140deg,rgb(96, 97, 200),rgb(126, 195, 229));
     &-head{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
+        @include d1-flex(row,0,center,10px);
         text-align: center;
         .mapa{
             grid-area: area1;
@@ -71,14 +66,11 @@
 
 /*SECCION SOCIOS*/
 .socio1{
+    @include d1-flex(row,space-around,center,0);
     background-image: url('../multimedia/img/portasocio.jpg');
-    display: flex;
     padding: 30px;
     background-size: cover;
     background-position: center;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
     h2{
         color: rgb(61, 55, 55);
         text-align: center;
