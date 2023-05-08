@@ -1,123 +1,116 @@
-section{
-    @include d1-flex(column,center,center,0);
-}
-/*CAJA1 */
-.hero{
-    background:url('../multimedia/img/seguridadinfor.gif');
+/*caja1*/
+.caja1 {
+    background: url("../multimedia/img/seguridadinfor.gif");
     background-size: cover;
     width: 100%;
     height: 700px;
-    &-caja1{
-        color:white;
-        font-family: 'Bruno Ace SC';
-        transition: all .2s;
-        &:hover{
-            transform: scale(1.1);
+    &-caj {
+        color: rgba(255, 255, 255, 0.955);
+        font-family: "Dancing Script";
+        transition: all 2s;
+        transform: rotatey(0deg);
+        &:hover {
+            transform: scale(1.1, 1.25);
+            transform: rotatey(360deg);
         }
-        img{
-            background-color: white;
+        img {
+            background-color: rgb(255, 255, 255);
             padding: 10px;
         }
-        &-desarrollo{
+        &-desarrollo {
             width: 100px;
             height: 100px;
             margin: 20px;
         }
     }
 }
+/**/
 
-/*CAJA 2*/
-//d1-flex($direction,$justify,$align,$gap)
-.caja2{
-    background-color:#e8ea96;
-    padding: 20px;
-    h2{
-        padding: 10px;
+/*caja 2*/
+.caja2 {
+    background: linear-gradient(45deg, rgba(17, 119, 85, 0.4), rgba(236, 29, 29, 0.879), rgba(240, 190, 98, 0.907));
+    h2 {
+        font-family: "Dancing Script";
     }
-    .row{
-        width: 100%;
-        @include d1-flex(row,space-around,center,0);
-        padding: 10px;
-    }
-    &-contenedor-img{
-        padding: 20px;
-        border: 2px solid #8080804d;
-        @include d1-flex(column,space-between,center,0);
-        text-align: center;
-        &:hover{
-            transform: scale(1.1);
-        }
-        p{
-            padding: 10px;
-            font-family: 'Bruno Ace SC';
-            font-size: 30px;
-            font-weight: bold;
-        }
-        img{
-            width: 200px;
-            height: 200px;
-        }
-    }
-}
-/*CAJA 3*/
-.caja3{
-    padding: 40px 40px 60px 40px;
-    background: linear-gradient(130deg,rgb(230, 164, 117),rgb(232, 234, 150));
-    h3{
-        font-family:'Bruno Ace SC' ;
-        font-weight: bold;
-        padding-bottom: 20px;
-    }
-    .columna{
-        padding: 20px;
-        border: 2px solid #8080804d;
-        @include d1-flex(column,space-evenly,center,0);
-        transition: all .2s ease-in;
-        &:hover{
-            color: white;
-            background-color: #1b1b32;
-            border-radius: 20px;
-            transform: scale(1.1);
-        }
-        img{
-            font-size: 2.5rem;;
-            height: 150px;
-            width: 200px;
-            margin: 10px 10px 20px 10px;
-            object-fit: cover;
-            padding: 8px 19px;
-            border-radius: 50%;
-        }
-    }
-}
-
-/*CAJA 4*/
-.contacto1 {
-    background:linear-gradient(130deg,rgb(209, 142, 107),rgb(53, 121, 222));
-    @include d1-flex(column,center,center,0);
-    width: 100%;
-    h2{
-        color: rgb(255, 255, 255);
-        padding: 10px;
-    }
-    &-items{
-        width: 100%;
-        @include d1-flex(row,space-around,center,50px);
-        padding: 10px;
-    }
-    .item{
-        background-color: rgb(157, 237, 172);
-        padding: 10px;
-        margin: 10px;
-        font-family:'Bruno Ace SC';
-        font-weight: bold;
+    .img {
+        background: linear-gradient(45deg, rgb(213, 170, 121), rgb(149, 233, 111));
         border-radius: 20px;
-        text-align: center;
-        transition: all .2s;
-        &:hover{
-            background-color: rgb(21, 90, 34);
-            color: rgba(255, 255, 255, 0.822);
-            transform: scale(1.1);
+        transition: 1s;
+        &:hover {
+            border-radius: 20px;
+            transform: scale(1.2, 1.2);
+            box-shadow: 1px 10px 10px 0px #3c3a3a;
+        }
+        img {
+            height: 90px;
+        }
+        p {
+            font-family: "Dancing Script";
+            font-weight: bold;
+            font-size: 20px;
         }
     }
 }
+/**/
+
+/*caja 3*/
+.caja3 {
+    background: linear-gradient(145deg, blue, skyblue);
+    h3,h2 {
+    font-family: "Dancing Script";
+    }
+    .card {
+        background: linear-gradient(145deg, rgb(0, 0, 255), rgb(135, 206, 235));
+        position: relative;
+        width: 300px;
+        height: 300px;
+        backface-visibility: hidden;
+        border: none;
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include d1-flex(flex,column,center,center,0);
+            padding: 10px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            transition: 0.5s;
+            h3 {
+                padding-top: 20px;
+            }
+            &.front {
+                transform: perspective(500px) rotateY(0deg);
+                border-radius: 50px;
+                box-shadow: 0 5px 10px 5px #000;
+                background: linear-gradient(45deg, rgb(98, 98, 246), rgb(95, 226, 95));
+            }
+            &.back {
+                transform: perspective(500px) rotateY(180deg);
+                box-shadow: 0 5px 10px 5px #000;
+                border-radius: 50px;
+                background: linear-gradient(45deg, rgb(98, 98, 246), rgb(95, 226, 95));
+            }
+        }
+        &:hover .front {
+            transform: perspective(600px) rotateY(180deg);
+        }
+        &:hover .back {
+            transform: perspective(600px) rotateY(360deg);
+        }
+    }
+}
+/**/
+/*caja4*/
+.caja4 {
+    background: linear-gradient(45deg,
+            rgba(99, 99, 226, 0.942),
+            rgba(112, 240, 112, 0.862),
+            rgba(246, 107, 107, 0.926));
+    form {
+        border-radius: 20px;
+        textarea {
+            resize: none;
+        }
+    }
+}
+

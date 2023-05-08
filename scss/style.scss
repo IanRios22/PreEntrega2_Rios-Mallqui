@@ -1,4 +1,4 @@
-//IMPORTS
+//IMPORTS BASE
 @import 'base/reset';
 @import 'base/utilidades';
 
@@ -9,8 +9,8 @@
 //IMPORT LAYOUT
 @import 'layout/index';
 @import 'layout/planes';
-@import 'layout/about';
 @import 'layout/contactos';
+@import 'layout/about';
 @import 'layout/videos';
 @import 'layout/media-querys';
 

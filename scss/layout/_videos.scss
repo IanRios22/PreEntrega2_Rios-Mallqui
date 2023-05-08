@@ -1,59 +1,18 @@
-/*VIDEOS*/
-.video-content{
-    background: linear-gradient(130deg,rgb(10, 91, 105),rgb(51, 65, 195));
-    display: grid;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    iframe{
-        border-radius: 25px;
-        padding: 10px;
-    }
-    h1{
-        color: #eee;
-        text-align: center;
-        padding: 10px;
-    }
-    .caja iframe{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .c1{
-        grid-area: area1;
-    }
-    .c2{
-        grid-area: area2;
-    }
-    .c3{
-        grid-area: area3;
-    }
-    .c4{
-        grid-area: area4;
-    }
-    .c5{
-        grid-area: area5;
-    }
-    .c6{
-        grid-area: area6;
-    }
-    .c7{
-        grid-area: area7;
-    }
-    .btn2{
-        padding: 20px;
-        border-radius: 20px;
-        border: none;
-        font-weight: bold;
-        background-color: rgb(14, 112, 12);
-        transition: all .2s;
-        &:hover{
+.videos {
+    background: linear-gradient(40deg, rgb(27, 30, 212), rgb(38, 171, 216));
+    .card-2 {
+        background: linear-gradient(130deg, rgb(255, 145, 0), rgb(175, 241, 95));
+        transition: all .3s;
+        &:hover {
             transform: scale(1.1);
-            background-color: rgb(44, 156, 160);
-            color: rgb(238, 238, 238);
+        }
+        iframe {
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .boton-noticias {
+            border: none;
+            background-color: rgb(178, 177, 234);
         }
     }
 }
-
-
-

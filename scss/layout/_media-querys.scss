@@ -1,92 +1,22 @@
-@media screen and (max-width:767px){
-    .navbar-brand img{
-        display: none;
+@media screen and (min-width:760px){
+    .card-2 {
+        iframe {
+            
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
     }
 }
-@media screen and (min-width:480px){
-    .hero-caja1 h1{
-        font-size: 20px;
-        text-align: center;
-        padding: 10px;
+@media screen and (max-width:1180px){
+    .card-2 {
+        iframe {
+            
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
     }
-    .socio1{
-        display: flex;
-        flex-direction: column;
-    }
-    .video-content{
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(7,1fr);
-        grid-template-areas: 
-            'area1' 
-            'area2' 
-            'area3'
-            'area4'
-            'area5'
-            'area6'
-            'area7';
-    }
-    .c7{
-        text-align: center;
-    }
-    .ubicacion-head{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        'area1'
-        'area2';
-    }
-
-}
-@media screen and (min-width:600px){
-    .video-content{
-        grid-template-columns:repeat(2,1fr);
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: 
-            'area1 area2' 
-            'area3 area4' 
-            'area5 area6'
-            'area7 area7';
-    }
-    .c7{
-        text-align: center;
-    }
-}
-
-@media screen and (min-width:800px){
-    .hero-caja1 h1{
-        font-size: 40px;
-        text-align: center;
-        padding: 10px;
-    }
-    .video-content{
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-template-areas: 
-            'area1 area2 area3' 
-            'area4 area5 area6' 
-            'area7 area7 area7';
-    }
-    .c7{
-        text-align: center;
-    }
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "area1 area2";
-    }
-    .socio1{
-        display: flex;
-        flex-direction: row;
-    }
-    .ubicacion-head{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        'area1 area2';
-    }
-    
 }
